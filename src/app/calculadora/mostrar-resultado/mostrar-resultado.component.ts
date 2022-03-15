@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-mostrar-resultado',
@@ -6,8 +6,8 @@ import { Component} from '@angular/core';
   styleUrls: ['./mostrar-resultado.component.css']
 })
 export class MostrarResultadoComponent {
-
-  constructor() { }
+//de padre a hijo
+@Input() result:string="";
 
 
 }
